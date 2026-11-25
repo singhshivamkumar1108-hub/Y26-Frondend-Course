@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body bgcolor="20B2AA" textcolor="FF69B4" scrolling="yes">
+<h1> KL University </h1>
+
+<h2>Student Registration Form</h2>
+
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>Student Name:</label>
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Enter Password">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter Email">
+        <br><br>
+
+        <label>Mobile Number:</label>
+        <input type="tel" name="mobile" placeholder="Enter Mobile Number">
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" name="age" min="18" max="30">
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+        <br><br>
+
+        <label>Preferred Time:</label>
+        <input type="time" name="time">
+        <br><br>
+
+        <label>Interview Date and Time:</label>
+        <input type="datetime-local" name="interview">
+        <br><br>
+
+        <label>Joining Month:</label>
+        <input type="month" name="month">
+        <br><br>
+
+        <label>Joining Week:</label>
+        <input type="week" name="week">
+        <br><br>
+
+        <label>Website:</label>
+        <input type="url" name="website" placeholder="Enter Website URL">
+        <br><br>
+
+        <label>Search:</label>
+        <input type="search" name="search" placeholder="Search here">
+        <br><br>
+
+        <label>Favorite Color:</label>
+        <input type="blue" name="color">
+        <br><br>
+
+        <label>Upload Photo:</label>
+        <input type="file" name="photo">
+        <br><br>
+
+        <label>Skill Level:</label>
+        <input type="range" name="skill" min="0" max="100">
+        <br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Academic Information</legend>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br><br>
+
+        <label>Skills:</label>
+        <input type="checkbox" name="skills" value="Java"> Java
+        <input type="checkbox" name="skills" value="Python"> Python
+        <input type="checkbox" name="skills" value="HTML"> HTML
+        <br><br>
+
+        <label>Department:</label>
+        <select name="department">
+            <option value="">Select Department</option>
+            <optgroup label="Engineering">
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+            </optgroup>
+            <optgroup label="Management">
+                <option>MBA</option>
+                <option>MCA</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <label>City:</label>
+        <input list="cities" name="city" placeholder="Enter City">
+        <datalist id="cities">
+            <option value="Hyderabad">
+            <option value="Vijayawada">
+            <option value="Guntur">
+            <option value="Chennai">
+            <option value="Bhagalpur"> 
+        </datalist>
+        <br><br>
+
+        <label>Address:</label><br>
+        <textarea name="address" rows="4" cols="40"
+                  placeholder="Enter Address"></textarea>
+        <br><br>
+
+        <label>Roll Number (Readonly):</label>
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <br><br>
+
+        <label>College Code (Disabled):</label>
+        <input type="text" value="KLU" disabled>
+        <br><br>
+
+        <input type="hidden" name="college" value="KLU">
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Form Actions</legend>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+        <input type="button" value="Click Me"
+               onclick="alert('Welcome to HTML Forms!')">
+
+        <button type="button">Normal Button</button>
+    </fieldset>
+
+    <h3>Note: Please fill all the required fields marked with an asterisk (*)</h3>
+    <fieldset>
+        <legend>Additional Information</legend>
+        <input type="submit" value="Submit Form" formaction="submit.php">
+    <input type="reset" value="Reset Form">
+    <input type="button" value="Click Me" onclick="alert('Button Clicked!')">
+    <input type="image" src="submit.png" alt="Submit Form" width="100" height="50">
+
+        <label>Comments:</label><br>
+        <textarea name="comments" rows="4" cols="40"
+                  placeholder="Enter your comments"></textarea>
+        <br><br>
+
+        <label>Feedback:</label><br>
+        <textarea name="feedback" rows="4" cols="40"
+                  placeholder="Enter your feedback"></textarea>
+        <br><br>
+    </fieldset>
+    
+</form>
+</body>
+</html>
